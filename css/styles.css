@@ -1,0 +1,33 @@
+div.transbox {
+	background-color: rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+	color: white;
+}
+
+body {
+	background-color: #F8F8F8;
+}
+
+.jumbotron {
+	background-image: url("../images/jiro-4.jpg");
+	background-size: cover;
+}
+
+.cards {
+	display: inline-block;
+}
+
+.footer {
+	text-align: center;
+	font-family: "Verdana", sans-serif;
+}
+
+/********* MEDIA QUERIES **********/
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
